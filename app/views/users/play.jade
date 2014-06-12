@@ -1,0 +1,15 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  table#game
+    tr
+      td.board
+        p GAME BOARD
+      td.chat
+        p CHAT
+        input#message(type='text')
+        button#send Troll
+        #chat
+        ul#users
